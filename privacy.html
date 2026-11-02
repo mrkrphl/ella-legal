@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Ella</title>
+    <link rel="icon" href="icon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="top">
+        <img src="icon.png" alt="" />
+        <span>Ella</span>
+      </div>
+
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 2 November 2026</p>
+
+      <p class="lede">
+        Ella is a client for an agent server that runs on your own Mac. We do not run a server that
+        holds your conversations, and we do not have accounts.
+      </p>
+
+      <h2>What we collect</h2>
+      <p>
+        Nothing. There is no analytics SDK, no crash reporter, no advertising identifier and no
+        third-party tracking of any kind in the app. There is no sign-up and there are no credentials
+        of ours to lose.
+      </p>
+
+      <h2>What stays on your devices</h2>
+      <ul>
+        <li>
+          <strong>The pairing token.</strong> When you scan the code on your Mac, Ella receives a
+          device token and keeps it in the iOS Keychain. It is sent only to the Mac you paired with.
+        </li>
+        <li>
+          <strong>Which Mac you paired with.</strong> The address is kept in the app's own
+          preferences on your phone so it can reconnect.
+        </li>
+        <li>
+          <strong>Your conversations.</strong> Chats live on your Mac, in the agent server's
+          database. Ella holds them in memory while a thread is open and nothing else.
+        </li>
+      </ul>
+
+      <h2>What leaves your devices, and to whom</h2>
+      <p>
+        Two things, both because you set them up:
+      </p>
+      <ul>
+        <li>
+          <strong>Your phone to your Mac.</strong> Chats travel over your own private Tailscale
+          network to the Mac you paired with. Nobody else's server is in the path.
+        </li>
+        <li>
+          <strong>Your Mac to the AI provider you chose.</strong> The Mac side answers a message by
+          calling a model endpoint that you configured there — for example DeepSeek or xAI. What you
+          type, and the parts of the screen an agent is allowed to see, are sent to that provider
+          under that provider's terms and privacy policy. Ella itself never calls a model provider,
+          and we never see any of it.
+        </li>
+      </ul>
+      <p>
+        If you would rather nothing leave your Mac, the Mac side can be pointed at a model that runs
+        locally, and the agents still work.
+      </p>
+
+      <h2>Camera and local network</h2>
+      <ul>
+        <li>
+          <strong>Camera</strong> is used for one thing: scanning the pairing code shown on your Mac.
+          No photo is stored or uploaded.
+        </li>
+        <li>
+          <strong>Local network</strong> is used to reach your Mac when it is on the same Wi-Fi. Over
+          Tailscale the traffic is end-to-end between your own devices.
+        </li>
+      </ul>
+
+      <h2>Screen and actions</h2>
+      <p>
+        An agent may be allowed to look at your Mac's screen, and — only with a switch turned on and
+        a yes you give — to click and type. Both are decisions you make on the Mac. They are not
+        recorded by us, and nothing is sent anywhere except the result of the action, inside the
+        conversation on your Mac.
+      </p>
+
+      <h2>Children</h2>
+      <p>Ella is not directed at children and collects no personal information from anyone.</p>
+
+      <h2>Deleting what is kept</h2>
+      <p>
+        Sign a device out on the Mac to revoke its token, or delete the app to remove it from the
+        phone. Deleting a chat on the Mac deletes it; there is no second copy for us to keep.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the date above changes with it, and the new version is what you find
+        at this address.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about any of this:
+        <a href="mailto:mrkrphl0705@gmail.com">mrkrphl0705@gmail.com</a>
+      </p>
+
+      <footer>
+        <a href="index.html">Ella</a> · <a href="support.html">Support</a> ·
+        <a href="terms.html">Terms</a>
+      </footer>
+    </main>
+  </body>
+</html>
